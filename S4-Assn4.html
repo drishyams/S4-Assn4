@@ -1,0 +1,51 @@
+<!Doctype html>
+<html>
+<head>
+	<title>Gradients</title>
+	<meta charset="UTF-8">
+	<style type="text/css">
+
+		.container{
+			width: 800px;
+			margin:60px auto;
+		}
+		.box{
+			width:100px;
+			height:100px;
+			border:1px solid #000;
+			text-align: center;
+			line-height: 100px;
+			display: inline-block;
+			margin-right: 15px;
+			-webkit-border-radius:12px;
+			-moz-border-radius:12px;
+			border-radius:12px;
+			font-size: 18px;
+
+		}
+		.box1{
+			background: -webkit-linear-gradient(left, red 30%, green 100%);
+			background: -moz-linear-gradient(left, red 30%, green 100%);
+			background: linear-gradient(left, red 30%, green 100%);
+		}
+		.box2{
+			background: -webkit-radial-gradient(circle at top  ,red,yellow,green);
+			background: -moz-radial-gradient(circle at top  ,red,yellow,green);
+			background: radial-gradient(circle at top  ,red,yellow,green);
+		}
+		.box3{
+			background:-webkit-radial-gradient(Ellipse at top ,red, yellow,green);
+			background:-moz-radial-gradient(Ellipse at top ,red, yellow,green);
+			background: radial-gradient(Ellipse at top ,red, yellow,green);
+		}	
+	</style>
+	
+</head>
+<body>
+	<div class="container">
+		<div class="box box1">Linear</div>
+		<div class="box box2">Circle</div>
+		<div class="box box3">Ellipse</div>
+	</div>
+</body>
+</html>
